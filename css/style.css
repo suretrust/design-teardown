@@ -1,6 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(247, 245, 245);
+    line-height: 1.5em;
+    color: #444;
 }
 
 h1, h2, h3, h4 {
@@ -42,7 +44,7 @@ header div {
 
 .articles div {
     text-align: center;
-    background-color: rgb(212, 211, 211);
+    background-color: rgb(207, 205, 205);
     height: 400px;
     vertical-align: middle;
 }
@@ -52,27 +54,38 @@ header div {
     grid-template-columns: auto auto auto auto;
     grid-gap: 5px;
     margin: 5px auto;
+    max-width: 1300px;
 }
 
 .latest div {
     height: 500px;
     padding: 15px;
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(196, 196, 196);
     text-align: center;
 }
 
 .double {
     grid-column: span 2;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: rgb(126, 126, 126)!important;
+    color: white;
+    padding: 15px;
+    margin: 15px;
 }
 
 .toronto {
     height: 300px;
     text-align: center;
     padding: 15px;
+    background-color: rgb(173, 173, 173);
 }
 
+
+
 .week {
-    text-align: center;
+    padding: 15px;
+    margin: 15px;
     height: 300px;
 }
 
@@ -87,6 +100,15 @@ header div {
     height: 300px;
 }
 
+.featured {
+    background-color: rgb(207, 205, 205);
+}
+
+.featured h2, .featured p {
+    padding: 15px;
+    margin: 15px;
+}
+
 .curated {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -95,4 +117,22 @@ header div {
 
 .curated div {
     height: 400px;
+}
+
+.newsletter {
+    background-color: rgb(207, 205, 205);
+    height: 600px;
+    line-height: 600px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+
+
+footer {
+    text-align: center;
+    height: 600px;
+    line-height: 600px;
+    background-color: rgb(207, 205, 205);
 }
